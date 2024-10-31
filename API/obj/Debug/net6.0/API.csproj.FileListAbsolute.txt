@@ -265,3 +265,4 @@ D:\Code_Practice\Back-End\C#.Net\PetProject\CocHupQuiz\API\bin\Debug\net6.0\runt
 D:\Code_Practice\Back-End\C#.Net\PetProject\CocHupQuiz\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
 D:\Code_Practice\Back-End\C#.Net\PetProject\CocHupQuiz\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
 D:\Code_Practice\Back-End\C#.Net\PetProject\CocHupQuiz\API\obj\Debug\net6.0\API.csproj.Up2Date
+D:\Code_Practice\Back-End\C#.Net\PetProject\CocHupQuiz\API\obj\Debug\net6.0\API.sourcelink.json

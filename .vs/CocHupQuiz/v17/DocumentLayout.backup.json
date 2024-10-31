@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|d:\\code_practice\\back-end\\c#.net\\petproject\\cochupquiz\\api\\controllers\\recordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|solutionrelative:api\\controllers\\recordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|d:\\code_practice\\back-end\\c#.net\\petproject\\cochupquiz\\api\\controllers\\difficultiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|solutionrelative:api\\controllers\\difficultiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|d:\\code_practice\\back-end\\c#.net\\petproject\\cochupquiz\\api\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|solutionrelative:api\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|d:\\code_practice\\back-end\\c#.net\\petproject\\cochupquiz\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|d:\\code_practice\\back-end\\c#.net\\petproject\\cochupquiz\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|d:\\code_practice\\back-end\\c#.net\\petproject\\cochupquiz\\api\\models\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|solutionrelative:api\\models\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|d:\\code_practice\\back-end\\c#.net\\petproject\\cochupquiz\\api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|solutionrelative:api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|d:\\code_practice\\back-end\\c#.net\\petproject\\cochupquiz\\api\\models\\record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|solutionrelative:api\\models\\record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|d:\\code_practice\\back-end\\c#.net\\petproject\\cochupquiz\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA5EAD35-D1FD-4823-B364-32E1AE53810A}|API\\API.csproj|solutionrelative:api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 154,
+          "SelectedChildIndex": 148,
           "Children": [
             {
               "$type": "Bookmark",
@@ -634,87 +618,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\appsettings.json*",
+              "RelativeToolTip": "API\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-31T16:55:20.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Properties\\launchSettings.json*",
+              "RelativeToolTip": "API\\Properties\\launchSettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-31T16:46:46.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
               "ToolTip": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Program.cs",
               "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T09:17:06.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "API\\Models\\Category.cs",
-              "ToolTip": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Models\\Category.cs",
-              "RelativeToolTip": "API\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:51:52.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Difficulty.cs",
-              "DocumentMoniker": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Models\\Difficulty.cs",
-              "RelativeDocumentMoniker": "API\\Models\\Difficulty.cs",
-              "ToolTip": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Models\\Difficulty.cs",
-              "RelativeToolTip": "API\\Models\\Difficulty.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:51:49.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Record.cs",
-              "DocumentMoniker": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Models\\Record.cs",
-              "RelativeDocumentMoniker": "API\\Models\\Record.cs",
-              "ToolTip": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Models\\Record.cs",
-              "RelativeToolTip": "API\\Models\\Record.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:52:03.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "API\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:34:56.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DifficultiesController.cs",
-              "DocumentMoniker": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Controllers\\DifficultiesController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\DifficultiesController.cs",
-              "ToolTip": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Controllers\\DifficultiesController.cs",
-              "RelativeToolTip": "API\\Controllers\\DifficultiesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:35:14.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RecordsController.cs",
-              "DocumentMoniker": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Controllers\\RecordsController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\RecordsController.cs",
-              "ToolTip": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Controllers\\RecordsController.cs",
-              "RelativeToolTip": "API\\Controllers\\RecordsController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAkwHoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:34:38.983Z",
+              "WhenOpened": "2024-10-31T16:46:27.097Z",
               "EditorCaption": ""
             }
           ]

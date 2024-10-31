@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Text.Json.Serialization;
 
 namespace API.Models
 {
@@ -13,8 +12,11 @@ namespace API.Models
         public string CorrectAnswer { get; set; } = null!;
         public string IncorrectAnswers { get; set; } = null!;
 
+        [JsonIgnore]
         public virtual Category? Category { get; set; }
+        [JsonIgnore]
         public virtual Difficulty? Difficulty { get; set; }
+        [JsonIgnore]
         public virtual User? User { get; set; }
     }
 }

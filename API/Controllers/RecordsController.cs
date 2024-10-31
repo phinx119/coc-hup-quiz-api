@@ -14,7 +14,18 @@ namespace API.Controllers
         [HttpGet("{categoryName}/{difficultyName}")]
         public async Task<IActionResult> GetList(string categoryName, string difficultyName)
         {
-            var records = await context.Records
+            var recordList = context.Records
+                .Select(r => new
+                {
+                    RecordId = r.RecordId,
+                    UserId = r.UserId,
+                    Category = r.Category,
+                    Difficulty = r.Difficulty,
+                    HighScore = r.HighScore,
+                    RecordDate = r.RecordDate
+                });
+
+            var records = await recordList
                 .Where(r =>
                     r.Category.CategoryName.Equals(categoryName) &&
                     r.Difficulty.DifficultyName.Equals(difficultyName)
@@ -32,7 +43,18 @@ namespace API.Controllers
         [HttpGet("{userId}")]
         public async Task<IActionResult> GetListByUserId(int userId)
         {
-            var records = await context.Records.Where(r => r.UserId == userId).ToListAsync();
+            var recordList = context.Records
+                .Select(r => new
+                {
+                    RecordId = r.RecordId,
+                    UserId = r.UserId,
+                    Category = r.Category,
+                    Difficulty = r.Difficulty,
+                    HighScore = r.HighScore,
+                    RecordDate = r.RecordDate
+                });
+
+            var records = await recordList.Where(r => r.UserId == userId).ToListAsync();
 
             if (records.Count == 0)
             {
@@ -46,7 +68,18 @@ namespace API.Controllers
         [HttpGet("{userId}/{categoryName}/{difficultyName}")]
         public async Task<IActionResult> GetByUserId(int userId, string categoryName, string difficultyName)
         {
-            var records = await context.Records
+            var recordList = context.Records
+                .Select(r => new
+                {
+                    RecordId = r.RecordId,
+                    UserId = r.UserId,
+                    Category = r.Category,
+                    Difficulty = r.Difficulty,
+                    HighScore = r.HighScore,
+                    RecordDate = r.RecordDate
+                });
+
+            var records = await recordList
                 .Where(r =>
                     r.UserId == userId &&
                     r.Category.CategoryName.Equals(categoryName) &&
@@ -65,6 +98,13 @@ namespace API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateRecord(int userId, string categoryName, string difficultyName, int highScore)
         {
+            // Get user by user id
+            var user = await context.Users.FirstOrDefaultAsync(u => u.UserId == userId);
+            if (user == null)
+            {
+                return NotFound("User does not exsist.");
+            }
+
             // Get category by name
             var category = await context.Categories.FirstOrDefaultAsync(c => c.CategoryName.Equals(categoryName));
             if (category == null)
@@ -73,7 +113,7 @@ namespace API.Controllers
             }
 
             // Get difficulty by name
-            var difficulty = await context.Difficulties.FirstOrDefaultAsync(c => c.DifficultyName.Equals(difficultyName));
+            var difficulty = await context.Difficulties.FirstOrDefaultAsync(d => d.DifficultyName.Equals(difficultyName));
             if (difficulty == null)
             {
                 return NotFound("Difficulty does not exsist.");
@@ -81,9 +121,9 @@ namespace API.Controllers
 
             var newRecord = new Record
             {
-                UserId = userId,
-                CategoryId = category.CategoryId,
-                DifficultyId = difficulty.DifficultyId,
+                User = user,
+                Category = category,
+                Difficulty = difficulty,
                 HighScore = highScore,
                 RecordDate = DateTime.UtcNow
             };
@@ -91,7 +131,7 @@ namespace API.Controllers
             context.Records.Add(newRecord);
             await context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetList), new { id = newRecord.RecordId }, newRecord);
+            return Created("Record created successfully.", newRecord);
         }
 
 
@@ -119,7 +159,7 @@ namespace API.Controllers
 
             await context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(existingRecord);
         }
     }
 }
