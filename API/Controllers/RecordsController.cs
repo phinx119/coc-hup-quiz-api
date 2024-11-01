@@ -74,7 +74,7 @@ namespace API.Controllers
         [HttpGet("GetByUserId")]
         public async Task<IActionResult> GetByUserId(int userId, string categoryName, string difficultyName)
         {
-            var recordList = context.Records
+            var records = context.Records
                 .Select(r => new
                 {
                     RecordId = r.RecordId,
@@ -85,19 +85,19 @@ namespace API.Controllers
                     RecordDate = r.RecordDate
                 });
 
-            var records = await recordList
+            var record = await records
                 .Where(r =>
                     r.User.UserId == userId &&
                     r.Category.CategoryName.Equals(categoryName) &&
                     r.Difficulty.DifficultyName.Equals(difficultyName)
                 ).FirstOrDefaultAsync();
 
-            if (records == null)
+            if (record == null)
             {
                 return NotFound("Can not found record.");
             }
 
-            return Ok(records);
+            return Ok(record);
         }
 
         // POST: Create a new record
@@ -165,7 +165,25 @@ namespace API.Controllers
 
             await context.SaveChangesAsync();
 
-            return Ok(existingRecord);
+            var records = context.Records
+                .Select(r => new
+                {
+                    RecordId = r.RecordId,
+                    User = r.User,
+                    Category = r.Category,
+                    Difficulty = r.Difficulty,
+                    HighScore = r.HighScore,
+                    RecordDate = r.RecordDate
+                });
+
+            var updatedRecord = await records
+                .Where(r =>
+                    r.User.UserId == userId &&
+                    r.Category.CategoryName.Equals(categoryName) &&
+                    r.Difficulty.DifficultyName.Equals(difficultyName)
+                ).FirstOrDefaultAsync();
+
+            return Ok(updatedRecord);
         }
     }
 }
