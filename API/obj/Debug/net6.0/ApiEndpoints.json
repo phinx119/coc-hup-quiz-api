@@ -21,7 +21,7 @@
   },
   {
     "ContainingType": "API.Controllers.RecordsController",
-    "Method": "CreateRecord",
+    "Method": "Create",
     "RelativePath": "api/Records",
     "HttpMethod": "POST",
     "IsController": true,
@@ -52,7 +52,7 @@
   },
   {
     "ContainingType": "API.Controllers.RecordsController",
-    "Method": "UpdateRecord",
+    "Method": "Update",
     "RelativePath": "api/Records",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -83,8 +83,34 @@
   },
   {
     "ContainingType": "API.Controllers.RecordsController",
-    "Method": "GetList",
-    "RelativePath": "api/Records/{categoryName}/{difficultyName}",
+    "Method": "GetByUserId",
+    "RelativePath": "api/Records/GetByUserId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "categoryName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "difficultyName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.RecordsController",
+    "Method": "GetListByCategoryAndDifficulty",
+    "RelativePath": "api/Records/GetListByCategoryAndDifficulty",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -92,12 +118,12 @@
       {
         "Name": "categoryName",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
         "Name": "difficultyName",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -105,7 +131,7 @@
   {
     "ContainingType": "API.Controllers.RecordsController",
     "Method": "GetListByUserId",
-    "RelativePath": "api/Records/{userId}",
+    "RelativePath": "api/Records/GetListByUserId",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -113,33 +139,7 @@
       {
         "Name": "userId",
         "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API.Controllers.RecordsController",
-    "Method": "GetByUserId",
-    "RelativePath": "api/Records/{userId}/{categoryName}/{difficultyName}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "categoryName",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "difficultyName",
-        "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

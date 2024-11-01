@@ -11,14 +11,16 @@ namespace API.Controllers
         CocHupQuizDBContext context = new CocHupQuizDBContext();
 
         // GET: Get record list
-        [HttpGet("{categoryName}/{difficultyName}")]
-        public async Task<IActionResult> GetList(string categoryName, string difficultyName)
+        [HttpGet("GetListByCategoryAndDifficulty")]
+        public async Task<IActionResult> GetListByCategoryAndDifficulty(string categoryName, string difficultyName)
         {
+            var rank = 0;
+
             var recordList = context.Records
                 .Select(r => new
                 {
                     RecordId = r.RecordId,
-                    UserId = r.UserId,
+                    User = r.User,
                     Category = r.Category,
                     Difficulty = r.Difficulty,
                     HighScore = r.HighScore,
@@ -29,7 +31,8 @@ namespace API.Controllers
                 .Where(r =>
                     r.Category.CategoryName.Equals(categoryName) &&
                     r.Difficulty.DifficultyName.Equals(difficultyName)
-                ).ToListAsync();
+                ).OrderByDescending(r => r.HighScore)
+                .ToListAsync();
 
             if (records.Count == 0)
             {
@@ -40,21 +43,24 @@ namespace API.Controllers
         }
 
         // GET: Get record list by user id
-        [HttpGet("{userId}")]
+        [HttpGet("GetListByUserId")]
         public async Task<IActionResult> GetListByUserId(int userId)
         {
             var recordList = context.Records
                 .Select(r => new
                 {
                     RecordId = r.RecordId,
-                    UserId = r.UserId,
+                    User = r.User,
                     Category = r.Category,
                     Difficulty = r.Difficulty,
                     HighScore = r.HighScore,
                     RecordDate = r.RecordDate
                 });
 
-            var records = await recordList.Where(r => r.UserId == userId).ToListAsync();
+            var records = await recordList
+                .Where(r => r.User.UserId == userId)
+                .OrderByDescending(r => r.RecordDate)
+                .ToListAsync();
 
             if (records.Count == 0)
             {
@@ -65,14 +71,14 @@ namespace API.Controllers
         }
 
         // GET: Get record by user id, category name, and difficulty name
-        [HttpGet("{userId}/{categoryName}/{difficultyName}")]
+        [HttpGet("GetByUserId")]
         public async Task<IActionResult> GetByUserId(int userId, string categoryName, string difficultyName)
         {
             var recordList = context.Records
                 .Select(r => new
                 {
                     RecordId = r.RecordId,
-                    UserId = r.UserId,
+                    User = r.User,
                     Category = r.Category,
                     Difficulty = r.Difficulty,
                     HighScore = r.HighScore,
@@ -81,7 +87,7 @@ namespace API.Controllers
 
             var records = await recordList
                 .Where(r =>
-                    r.UserId == userId &&
+                    r.User.UserId == userId &&
                     r.Category.CategoryName.Equals(categoryName) &&
                     r.Difficulty.DifficultyName.Equals(difficultyName)
                 ).FirstOrDefaultAsync();
@@ -96,7 +102,7 @@ namespace API.Controllers
 
         // POST: Create a new record
         [HttpPost]
-        public async Task<IActionResult> CreateRecord(int userId, string categoryName, string difficultyName, int highScore)
+        public async Task<IActionResult> Create(int userId, string categoryName, string difficultyName, int highScore)
         {
             // Get user by user id
             var user = await context.Users.FirstOrDefaultAsync(u => u.UserId == userId);
@@ -137,7 +143,7 @@ namespace API.Controllers
 
         // PUT: Update an existing record
         [HttpPut]
-        public async Task<IActionResult> UpdateRecord(int? userId, string? categoryName, string? difficultyName, int? highScore)
+        public async Task<IActionResult> Update(int? userId, string? categoryName, string? difficultyName, int? highScore)
         {
             var existingRecord = await context.Records
                 .Where(r =>
