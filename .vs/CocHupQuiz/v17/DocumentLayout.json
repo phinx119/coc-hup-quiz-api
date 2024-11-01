@@ -35,8 +35,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-01T20:08:36.289Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -49,8 +48,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-01T20:08:37.035Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -652,7 +650,7 @@
               "RelativeDocumentMoniker": "API\\Controllers\\RecordsController.cs",
               "ToolTip": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\Controllers\\RecordsController.cs",
               "RelativeToolTip": "API\\Controllers\\RecordsController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAzwBAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T20:08:39.798Z",
               "EditorCaption": ""

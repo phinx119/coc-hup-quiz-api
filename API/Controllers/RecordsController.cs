@@ -14,8 +14,6 @@ namespace API.Controllers
         [HttpGet("GetListByCategoryAndDifficulty")]
         public async Task<IActionResult> GetListByCategoryAndDifficulty(string categoryName, string difficultyName)
         {
-            var rank = 0;
-
             var recordList = context.Records
                 .Select(r => new
                 {
