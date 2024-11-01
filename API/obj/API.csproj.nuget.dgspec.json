@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\API.csproj": {}
+    "E:\\PRM392\\coc-hup-quiz-api\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\API.csproj": {
+    "E:\\PRM392\\coc-hup-quiz-api\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\API.csproj",
+        "projectUniqueName": "E:\\PRM392\\coc-hup-quiz-api\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\xuanp\\.nuget\\packages\\",
-        "outputPath": "D:\\Code_Practice\\Back-End\\C#.Net\\PetProject\\CocHupQuiz\\API\\obj\\",
+        "projectPath": "E:\\PRM392\\coc-hup-quiz-api\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "E:\\PRM392\\coc-hup-quiz-api\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\xuanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -90,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
